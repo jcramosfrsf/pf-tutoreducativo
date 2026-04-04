@@ -1,6 +1,4 @@
 """Token counting, cost estimation, latency measurement, and budget checking.
-
-Reusable across classes 3, 5, 14-16 of the AI Engineer Bootcamp.
 Supports Gemini and Groq providers.
 """
 

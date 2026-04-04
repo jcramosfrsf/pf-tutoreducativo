@@ -1,0 +1,9 @@
+google-genai
+groq
+matplotlib
+openai
+pydantic
+pydantic[email]
+python-dotenv
+rich
+streamlit

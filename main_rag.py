@@ -124,11 +124,11 @@ def main() -> None:
 
     # Paso 4: Queries RAG
     queries = [
-        "¿Cuál es el horario de trabajo en NovaTech?",
-        "¿Cuántos días de vacaciones me corresponden en mi primer año?",
-        "¿Qué equipo de cómputo reciben los desarrolladores?",
-        "¿Cuál es el proceso para crear un ticket de soporte técnico?",
-        "¿Qué beneficios de seguro médico ofrece la empresa?",
+        "¿Qué es UP?",
+        "¿Cuáles son las fases del proceso unificado?",
+        "¿Cuál es el origen del Proceso Unificado?",
+        "¿Cuál es la recomendación para implementar el Proceso Unificado?",
+        "¿Cuaáles son los principales axiomas en los que se basea el proceso unificado (UP, Unified Process?",
     ]
 
     for i, question in enumerate(queries, 1):

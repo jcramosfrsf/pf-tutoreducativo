@@ -21,6 +21,7 @@ logger = get_logger(__name__)
 def _normalize(s: str) -> str:
     """Lowercase, strip, and remove accents for comparison."""
     s = s.strip().lower()
+    """Unicode NFKD (Normalization Form Compatibility Decomposition)"""
     nfkd = unicodedata.normalize("NFKD", s)
     return "".join(c for c in nfkd if not unicodedata.combining(c))
 
