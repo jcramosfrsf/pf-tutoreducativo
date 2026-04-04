@@ -135,8 +135,11 @@ def main() -> None:
         print(f"\n{CYAN}{BOLD}{'=' * 80}")
         print(f"QUERY {i}/{len(queries)}: {question}")
         print(f"{'=' * 80}{RESET}")
-
+        
+        # Respuestas (results) a las preguntas (answer) realizadas
         answer, results = rag_query(collection, question)
+
+        
 
         print(f"\n{YELLOW}{BOLD}Chunks recuperados:{RESET}")
         for j, r in enumerate(results, 1):
