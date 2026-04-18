@@ -128,7 +128,7 @@ def main() -> None:
         "¿Cuáles son las fases del proceso unificado?",
         "¿Cuál es el origen del Proceso Unificado?",
         "¿Cuál es la recomendación para implementar el Proceso Unificado?",
-        "¿Cuaáles son los principales axiomas en los que se basea el proceso unificado (UP, Unified Process?",
+        "¿Cuáles son los principales axiomas en los que se basea el proceso unificado (UP, Unified Process?",
     ]
 
     for i, question in enumerate(queries, 1):
