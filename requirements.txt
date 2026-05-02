@@ -5,7 +5,8 @@ openai
 pydantic
 pydantic[email]
 python-dotenv
+pypdf
 rich
-streamlit
-dotenv
 rank_bm25
+sentence_transformers
+chromadb
