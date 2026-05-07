@@ -1,10 +1,12 @@
+from __future__ import annotations
+
 import os
 import re
 import uuid
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from pypdf import PdfReader
+import pdfplumber
 
 
 @dataclass
@@ -32,13 +34,14 @@ def load_txt(path: str) -> Document:
 
 
 def load_pdf(path: str) -> Document:
-    """Carga un archivo .pdf como Document usando pypdf."""
-    reader = PdfReader(path)
-    pages = [page.extract_text() or "" for page in reader.pages]
-    content = "\n\n".join(pages)
+    """Carga un archivo .pdf como Document usando pdfplumber."""
+    with pdfplumber.open(path) as reader:
+        pages = [page.extract_text() or "" for page in reader.pages]
+        content = "\n\n".join(pages)
+        num_pages = len(reader.pages)
     return Document(
         content=content,
-        metadata={"source": path, "type": "pdf", "pages": len(reader.pages)},
+        metadata={"source": path, "type": "pdf", "pages": num_pages},
     )
 
 

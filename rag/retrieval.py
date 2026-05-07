@@ -1,4 +1,6 @@
 """
+from __future__ import annotations
+
 rag/retrieval.py — Clase 6: RAG Avanzado
 
 Técnicas implementadas:

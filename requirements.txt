@@ -10,3 +10,4 @@ rich
 rank_bm25
 sentence_transformers
 chromadb
+pdfplumber
